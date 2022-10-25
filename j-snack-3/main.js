@@ -8,9 +8,16 @@ let oddNumbers = [];
 for(i = 0; i < numbers.length; i++){
 
     if(i % 2 != 0){
-        oddNumbers.push(numbers[i])
-    } 
-    
+        oddNumbers.push(numbers[i]);
+    }    
 }
 
-console.log(oddNumbers)
+let total = 0;
+
+console.log(oddNumbers);
+
+for(i = 0; i < oddNumbers.length; i++){
+    total = total + oddNumbers[i];
+}
+
+console.log(total);
